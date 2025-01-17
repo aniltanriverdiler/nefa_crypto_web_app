@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", serif !important;
+}
+
+.navbar-text-custom {
+  font-weight: 400 !important;
+  line-height: 27px !important;
+  color: #222222 !important;
+}
+
+.btn.btn-primary {
+  background: rgb(70, 142, 249);
+  background: linear-gradient(180deg, rgb(70, 142, 249) 0%, rgb(12, 102, 238) 100%);
+}
+.btn.btn-primary:hover {
+  font-weight: 600;
+  color: rgb(70, 142, 249);
+  background: white;
+}/*# sourceMappingURL=style.css.map */
