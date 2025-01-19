@@ -2,14 +2,26 @@ body {
     font-family: "Poppins", serif !important;
 }
 
+/* Hero Section Styles */
 .navbar-text-custom {
     font-weight: 400 !important;
     line-height: 27px !important;
     color: #222222 !important;
 }
 
+.btn.btn-outline-primary {
+    border:  rgba(70,142,249,1) 1px solid !important;
+    color:  rgba(70,142,249,1) !important;
+    
+    &:hover {
+        font-weight: 600;
+        color: white !important;
+        background: linear-gradient(180deg, rgba(70,142,249,1) 0%, rgba(12,102,238,1) 100%);
+    }
+}
+
 .btn.btn-primary {
-    background: rgb(70,142,249);
+    border:  rgba(70,142,249,1) 1px solid !important;
     background: linear-gradient(180deg, rgba(70,142,249,1) 0%, rgba(12,102,238,1) 100%);
 
     &:hover {
@@ -19,3 +31,99 @@ body {
     }
 }
 
+.hero-text-1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    background: rgb(70,142,249);
+    background: linear-gradient(180deg, rgba(70,142,249,1) 0%, rgba(12,102,238,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text-2 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 82px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -250px;
+        left: -70px;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
+        background-image: url(assets/hero-section-img/hero-ellipse-1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        right: 100px;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-image: url(assets/hero-section-img/hero-star-1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-text-gradient {
+    background: rgb(96,255,252);
+    background: linear-gradient(180deg, rgba(96,255,252,1) 0%, rgba(41,126,255,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text-3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.hero-bitcoin-img {
+    position: relative;
+    width: 785px;
+    height: 762px;
+    background-image: url(assets/hero-section-img/hero-bitcoin.png);
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        background-image: url(assets/hero-section-img/hero-ellipse-3.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 230px;
+        right: 80px;
+        transform: translateY(-50%);
+        width: 27px;
+        height: 27px;
+        background-image: url(assets/hero-section-img/hero-ellipse-2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-bg {
+    background: rgb(253,249,255);
+    background: linear-gradient(135deg, rgba(253,249,255,1) 0%, rgba(248,239,255,1) 10%, rgba(233,248,255,1) 30%, rgba(231,251,255,1) 60%, rgba(231,240,255,1) 80%, rgba(226,238,255,1) 100%);
+}
