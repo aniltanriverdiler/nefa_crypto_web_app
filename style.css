@@ -122,4 +122,9 @@ body {
 .hero-bg {
   background: rgb(253, 249, 255);
   background: linear-gradient(135deg, rgb(253, 249, 255) 0%, rgb(248, 239, 255) 10%, rgb(233, 248, 255) 30%, rgb(231, 251, 255) 60%, rgb(231, 240, 255) 80%, rgb(226, 238, 255) 100%);
+}
+
+.padding-custom {
+  padding-top: 100px !important;
+  padding-bottom: 1000px !important;
 }/*# sourceMappingURL=style.css.map */
