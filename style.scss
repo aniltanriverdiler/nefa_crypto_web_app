@@ -132,3 +132,69 @@ body {
     padding-top: 100px !important;
     padding-bottom: 1000px !important;
 }
+
+/* Crypto Price Charts Section Styles */
+.card-margin {
+    margin-top: -55px;
+}
+
+.card-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+
+    &::before {
+        content: "🔥";
+    }
+}
+
+.card-link-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: #2F7CF0;
+    text-decoration: none;
+ 
+    &::after {
+        content: " >";
+    }
+}
+
+.card-text-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0;
+}
+
+.crypto-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card-text-2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+
+    &::before {
+        content: "🚀";
+        margin-right: 5px;
+    }
+}
+
+.card-text-3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+
+    &::before {
+        content: "💎";
+        margin-right: 5px;
+    }
+}
+

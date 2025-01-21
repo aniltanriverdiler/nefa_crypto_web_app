@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Poppins", serif !important;
 }
@@ -127,4 +128,65 @@ body {
 .padding-custom {
   padding-top: 100px !important;
   padding-bottom: 1000px !important;
+}
+
+/* Crypto Price Charts Section Styles */
+.card-margin {
+  margin-top: -55px;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.card-text::before {
+  content: "🔥";
+}
+
+.card-link-text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #2F7CF0;
+  text-decoration: none;
+}
+.card-link-text::after {
+  content: " >";
+}
+
+.card-text-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  margin: 0;
+}
+
+.crypto-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card-text-2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.card-text-2::before {
+  content: "🚀";
+  margin-right: 5px;
+}
+
+.card-text-3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.card-text-3::before {
+  content: "💎";
+  margin-right: 5px;
 }/*# sourceMappingURL=style.css.map */
