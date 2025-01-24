@@ -20,4 +20,3 @@ optionMenus.forEach(optionMenu => {
     });
   });
 });
-
