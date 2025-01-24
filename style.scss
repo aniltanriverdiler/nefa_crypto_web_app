@@ -343,6 +343,49 @@ $background-color: white; // İçerik arka plan rengi
     }
   }
 
+/* Trusted Partners Worldwide Sections Styles */
+.trusted-partners-bg {
+    position: relative;
+    border-radius: 40px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(assets/trusted-partners-img/rectangle.png);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.35; /* Sadece resmin opaklığı */
+        z-index: 1;
+        border-radius: 40px;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 2; /* İçerikleri ön plana almak için */
+    }
+}
+
+
+.trusted-partners-text {
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 42px;
+   color: #222222;
+}
+
+.trusted-partners-text-1 {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 27px;
+   color: #666666; 
+}
+
+
+
   
   
 
