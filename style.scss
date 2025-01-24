@@ -198,3 +198,153 @@ body {
     }
 }
 
+/* Buy and Trade Sections Styles */
+.buy-trade-text {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    color: #222222;
+}
+
+.buy-trade-text-1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+    padding-right: 5rem;
+}
+
+.form-text-1 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    background: rgb(70,142,249);
+    background: linear-gradient(180deg, rgba(70,142,249,1) 0%, rgba(12,102,238,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+$border-width: 1.2px; // Border kalınlığı
+$border-radius: 22px; // Yuvarlatılmış köşe yarıçapı
+$gradient: linear-gradient(180deg, rgba(103,164,255,1) 25%, rgba(12,211,255,1) 50%, rgba(47,124,240,1) 75%, rgba(14,101,232,1) 100%); // Gradyan renkler
+$background-color: white; // İçerik arka plan rengi
+
+.gradient-border {
+  position: relative;
+  padding: 30px 25px; // İç boşluk
+  background: $background-color;
+  border-radius: $border-radius;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $gradient; // Gradyan uygulanır
+    z-index: -1;
+    border-radius: $border-radius; // Yuvarlatılmış kenarlar
+    padding: $border-width; // Border alanı kadar içeri kaydır
+    -webkit-mask: 
+      linear-gradient(white, white) content-box,
+      linear-gradient(white, white) border-box;
+    -webkit-mask-composite: destination-out; // Yalnızca border alanı görünür
+    mask-composite: exclude; // Modern tarayıcılar için
+  }
+}
+
+.select-menu {
+    width: 180px;
+    position: relative;
+  
+    .select-btn {
+      display: flex;
+      height: 87px;
+      background: #fff;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 8px;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+      gap: 12px;
+      transition: background 0.3s ease;
+  
+      i {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+      }
+  
+    }
+  
+    &.active .select-btn i {
+      transform: rotate(-180deg); // Menü açıkken ikonu döndür
+    }
+  
+    .options {
+      position: absolute;
+      top: calc(100% + 10px); // Butonun hemen altında konumlandır
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      background: #fff;
+      z-index: 10;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none; // Varsayılan olarak tıklamayı engelle
+  
+      &.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all; // Açıldığında tıklamaya izin ver
+      }
+  
+      .option {
+        display: flex;
+        height: 55px;
+        cursor: pointer;
+        padding: 0 16px;
+        border-radius: 8px;
+        align-items: center;
+        background: #fff;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: #f2f2f2; // Hover durumunda arka plan değişimi
+        }
+  
+        .option-text {
+          font-size: 18px;
+          color: #333;
+        }
+  
+        i {
+          font-size: 25px;
+          margin-right: 12px;
+        }
+      }
+    }
+  
+    .flag-size,
+    .flag-size-1 {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-right: 12px;
+  
+      &.flag-size-1 {
+        margin-right: 0;
+      }
+    }
+  }
+
+  
+  
+
+
+

@@ -189,4 +189,131 @@ body {
 .card-text-3::before {
   content: "💎";
   margin-right: 5px;
+}
+
+/* Buy and Trade Sections Styles */
+.buy-trade-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+  color: #222222;
+}
+
+.buy-trade-text-1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+  padding-right: 5rem;
+}
+
+.form-text-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  background: rgb(70, 142, 249);
+  background: linear-gradient(180deg, rgb(70, 142, 249) 0%, rgb(12, 102, 238) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  position: relative;
+  padding: 30px 25px;
+  background: white;
+  border-radius: 22px;
+  z-index: 0;
+}
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgb(103, 164, 255) 25%, rgb(12, 211, 255) 50%, rgb(47, 124, 240) 75%, rgb(14, 101, 232) 100%);
+  z-index: -1;
+  border-radius: 22px;
+  padding: 1.2px;
+  -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white) border-box;
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.select-menu {
+  width: 180px;
+  position: relative;
+}
+.select-menu .select-btn {
+  display: flex;
+  height: 87px;
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  gap: 12px;
+  transition: background 0.3s ease;
+}
+.select-menu .select-btn i {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+.select-menu .options {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+.select-menu .options.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.select-menu .options .option {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+  transition: background 0.3s ease;
+}
+.select-menu .options .option:hover {
+  background: #f2f2f2;
+}
+.select-menu .options .option .option-text {
+  font-size: 18px;
+  color: #333;
+}
+.select-menu .options .option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+.select-menu .flag-size,
+.select-menu .flag-size-1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.select-menu .flag-size.flag-size-1,
+.select-menu .flag-size-1.flag-size-1 {
+  margin-right: 0;
 }/*# sourceMappingURL=style.css.map */
