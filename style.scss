@@ -429,6 +429,69 @@ $background-color: white; // İçerik arka plan rengi
 
 }
 
+/* Advanced Trading Tools Sections Styles */
+.trading-tools-text {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #222222;
+}
+
+.trading-tools-gradient {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #222222;
+    background: rgb(57,132,244);
+    background: linear-gradient(180deg, rgba(57,132,244,1) 14%, rgba(12,211,255,1) 45%, rgba(47,124,240,1) 70%, rgba(14,101,232,1) 85%);
+    background-clip: text;
+    color: transparent;
+}
+
+.trading-tools-text-1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #222222;
+}
+
+.trading-tools-text-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+    margin-right: 135px;
+}
+
+.trusted-partners-bg-1 {
+    position: relative;
+    border-radius: 40px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(assets/trusted-partners-img/rectangle.png);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.15; /* Sadece resmin opaklığı */
+        z-index: 1;
+        border-radius: 40px;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 2; /* İçerikleri ön plana almak için */
+    }
+}
+
+
+
+
+
 
 
 
