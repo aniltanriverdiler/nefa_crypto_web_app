@@ -566,6 +566,65 @@ $background-color: white; // İçerik arka plan rengi
     text-align: center;
 }
 
+/* Frequently Asked Questions Sections Styles */
+.faq-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 6%;
+    background: rgb(70,142,249);
+    background: linear-gradient(180deg, rgba(70,142,249,1) 0%, rgba(12,102,238,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.faq-text-1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+
+.faq-text-2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0;
+}
+
+.faq-text-3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #666666;
+    margin: 0;
+}
+
+.accordion {
+    --bs-accordion-active-bg: white !important;
+    --bs-accordion-border-color: white !important;
+}
+
+.accordion-body {
+    padding: 0 !important;
+    margin: 12px 0;
+}
+
+.accordion-button {
+    padding: 0 !important;
+    margin: 16px 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+
 
 
 
