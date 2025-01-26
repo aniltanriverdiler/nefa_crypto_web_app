@@ -468,6 +468,8 @@ $background-color: white; // İçerik arka plan rengi
 .trusted-partners-bg-1 {
     position: relative;
     border-radius: 40px;
+    background: rgb(228,233,240);
+    background: linear-gradient(0deg, rgba(228,233,240,1) 0%, rgba(242,245,250,1) 50%, rgba(255,255,255,1) 100%);
 
     &::before {
         content: "";
