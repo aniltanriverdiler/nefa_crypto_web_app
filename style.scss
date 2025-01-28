@@ -39,6 +39,10 @@ body {
     background: linear-gradient(180deg, rgba(70,142,249,1) 0%, rgba(12,102,238,1) 100%);
     background-clip: text;
     color: transparent;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .hero-text-2 {
@@ -72,6 +76,37 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    @media (max-width: 768px) {
+        text-align: center;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        font-size: 48px; /* Yazı boyutunu küçülttüm */
+        line-height: 60px; /* Satır yüksekliğini küçülttüm */
+
+        &::before {
+            bottom: -250px; /* Daha az aşağıya yerleştirdim */
+            left: 0px; /* Soldan konumunu değiştirdim */
+            width: 20px; /* Boyutları küçülttüm */
+            height: 20px;
+        }
+
+        &::after {
+            top: -10px; /* Daha yukarı kaydırdım */
+            right: 70px; /* Sağdan daha yakınlaştırdım */
+            width: 40px; /* Boyutları küçülttüm */
+            height: 40px;
+        }
+    }
 }
 
 .hero-text-gradient {
@@ -86,6 +121,10 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #666666;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .hero-bitcoin-img {
@@ -120,6 +159,24 @@ body {
         background-image: url(assets/hero-section-img/hero-ellipse-2.svg);
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+    
+    @media (max-width: 992px) {
+        width: 106%;
+
+        &::before {
+            top: 150px;
+            left: 30px;
+        }
+
+        &::after {
+            bottom: 205px;
+            right: 25px;
+        }
     }
 }
 
