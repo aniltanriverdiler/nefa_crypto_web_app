@@ -255,6 +255,16 @@ body {
     }
 }
 
+.custom-border-end {
+    border-right: none;
+  }
+  
+  @media (min-width: 1200px) {
+    .custom-border-end {
+      border-right: 1px solid #EAEAEA;
+    }
+  }
+  
 /* Buy and Trade Sections Styles */
 .buy-trade-text {
     font-weight: 600;
