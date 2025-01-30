@@ -527,6 +527,18 @@ body {
   z-index: 2; /* İçerikleri ön plana almak için */
 }
 
+@media (max-width: 768px) {
+  .padding-link {
+    padding-left: 155px;
+    padding-top: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .padding-link {
+    padding-left: 95px;
+  }
+}
+
 /* Industry-Leading Security From Day One Sections Styles */
 .industry-leading-text {
   font-weight: 600;

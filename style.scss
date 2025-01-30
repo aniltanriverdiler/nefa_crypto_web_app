@@ -559,6 +559,17 @@ $background-color: white; // İçerik arka plan rengi
     }
 }
 
+.padding-link {
+    @media (max-width: 768px) {
+        padding-left: 155px;
+        padding-top: 24px;
+    }
+
+    @media (max-width: 576px) {
+        padding-left: 95px;
+    }
+}
+
 /* Industry-Leading Security From Day One Sections Styles */
 .industry-leading-text {
     font-weight: 600;
