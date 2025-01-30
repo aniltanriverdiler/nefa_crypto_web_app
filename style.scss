@@ -648,6 +648,20 @@ $background-color: white; // İçerik arka plan rengi
     text-align: center;
 }
 
+.padding-user-text {
+    @media (max-width: 992px) {
+        padding: 0 200px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 150px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0 48px;
+    }
+}
+
 /* Frequently Asked Questions Sections Styles */
 .faq-text {
     font-weight: 400;

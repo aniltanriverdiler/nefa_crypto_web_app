@@ -616,6 +616,22 @@ body {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .padding-user-text {
+    padding: 0 200px;
+  }
+}
+@media (max-width: 768px) {
+  .padding-user-text {
+    padding: 0 150px;
+  }
+}
+@media (max-width: 576px) {
+  .padding-user-text {
+    padding: 0 48px;
+  }
+}
+
 /* Frequently Asked Questions Sections Styles */
 .faq-text {
   font-weight: 400;
