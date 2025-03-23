@@ -1,16 +1,16 @@
-const optionMenus = document.querySelectorAll(".select-menu"); // Tüm menüleri seçiyoruz
+const optionMenus = document.querySelectorAll(".select-menu"); // Selecting all menus 
 
 optionMenus.forEach(optionMenu => {
   const selectBtn = optionMenu.querySelector(".select-btn");
   const options = optionMenu.querySelector(".options");
   const sBtnText = optionMenu.querySelector(".sBtn-text");
 
-  // Menü açma/kapama
+  // Opening/closing the menu  
   selectBtn.addEventListener("click", () => {
     options.classList.toggle("active");
   });
 
-  // Seçim yapıldığında menü kapanır ve seçilen metin güncellenir
+  // When an option is selected, the menu closes and the selected text is updated
   const optionItems = options.querySelectorAll(".option");
   optionItems.forEach(option => {
     option.addEventListener("click", () => {

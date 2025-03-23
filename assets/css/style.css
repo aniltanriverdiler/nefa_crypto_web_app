@@ -4,6 +4,12 @@ body {
 }
 
 /* Hero Section Styles */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 40px;
+  }
+}
+
 .navbar-text-custom {
   font-weight: 400 !important;
   line-height: 27px !important;
@@ -60,7 +66,7 @@ body {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  background-image: url(assets/hero-section-img/hero-ellipse-1.svg);
+  background-image: url(../img/hero-section-img/hero-ellipse-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -72,7 +78,7 @@ body {
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
-  background-image: url(assets/hero-section-img/hero-star-1.svg);
+  background-image: url(../img/hero-section-img/hero-star-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -89,19 +95,19 @@ body {
 }
 @media (max-width: 992px) {
   .hero-text-2 {
-    font-size: 48px; /* Yazı boyutunu küçülttüm */
-    line-height: 60px; /* Satır yüksekliğini küçülttüm */
+    font-size: 48px;
+    line-height: 60px;
   }
   .hero-text-2::before {
-    bottom: -250px; /* Daha az aşağıya yerleştirdim */
-    left: 0px; /* Soldan konumunu değiştirdim */
-    width: 20px; /* Boyutları küçülttüm */
+    bottom: -250px;
+    left: 0px;
+    width: 20px;
     height: 20px;
   }
   .hero-text-2::after {
-    top: -10px; /* Daha yukarı kaydırdım */
-    right: 70px; /* Sağdan daha yakınlaştırdım */
-    width: 40px; /* Boyutları küçülttüm */
+    top: -10px;
+    right: 70px;
+    width: 40px;
     height: 40px;
   }
 }
@@ -130,7 +136,7 @@ body {
   position: relative;
   width: 785px;
   height: 762px;
-  background-image: url(assets/hero-section-img/hero-bitcoin.png);
+  background-image: url(../img/hero-section-img/hero-bitcoin.png);
   background-size: cover;
   background-position: center;
 }
@@ -142,7 +148,7 @@ body {
   transform: translateY(-50%);
   width: 32px;
   height: 32px;
-  background-image: url(assets/hero-section-img/hero-ellipse-3.svg);
+  background-image: url(../img/hero-section-img/hero-ellipse-3.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -154,7 +160,7 @@ body {
   transform: translateY(-50%);
   width: 27px;
   height: 27px;
-  background-image: url(assets/hero-section-img/hero-ellipse-2.svg);
+  background-image: url(../img/hero-section-img/hero-ellipse-2.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -206,7 +212,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 22.5px;
-  color: #2F7CF0;
+  color: #2f7cf0;
   text-decoration: none;
 }
 .card-link-text::after {
@@ -254,7 +260,7 @@ body {
 
 @media (min-width: 1200px) {
   .custom-border-end {
-    border-right: 1px solid #EAEAEA;
+    border-right: 1px solid #eaeaea;
   }
 }
 /* Buy and Trade Sections Styles */
@@ -398,16 +404,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(assets/trusted-partners-img/rectangle.png);
+  background-image: url(../img/trusted-partners-img/rectangle.png);
   background-position: center;
   background-size: cover;
-  opacity: 0.35; /* Sadece resmin opaklığı */
+  opacity: 0.35;
   z-index: 1;
   border-radius: 40px;
 }
 .trusted-partners-bg > * {
   position: relative;
-  z-index: 2; /* İçerikleri ön plana almak için */
+  z-index: 2;
 }
 
 .trusted-partners-text {
@@ -462,7 +468,7 @@ body {
   content: "";
 }
 .credit-card-link::before {
-  content: url(assets/credit-card-img/check-circle.svg);
+  content: url(../img/credit-card-img/check-circle.svg);
   display: inline-block;
   padding-top: 9px;
 }
@@ -515,16 +521,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(assets/trusted-partners-img/rectangle.png);
+  background-image: url(../img/trusted-partners-img/rectangle.png);
   background-position: center;
   background-size: cover;
-  opacity: 0.15; /* Sadece resmin opaklığı */
+  opacity: 0.15;
   z-index: 1;
   border-radius: 40px;
 }
 .trusted-partners-bg-1 > * {
   position: relative;
-  z-index: 2; /* İçerikleri ön plana almak için */
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -557,7 +563,7 @@ body {
   gap: 5px;
 }
 .industry-leading-text-1::before {
-  content: url(assets/credit-card-img/check-circle.svg);
+  content: url(../img/credit-card-img/check-circle.svg);
   padding-top: 8px;
 }
 
@@ -702,4 +708,12 @@ body {
   box-shadow: none !important;
 }
 
-/* Footer Section Styles *//*# sourceMappingURL=style.css.map */
+/* Footer Section Styles */
+.custom-border-end {
+  border-right: 1px solid var(--bs-border-color);
+}
+@media (max-width: 576px) {
+  .custom-border-end {
+    border-right: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */

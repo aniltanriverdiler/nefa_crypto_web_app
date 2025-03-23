@@ -1,0 +1,802 @@
+body {
+  font-family: "Poppins", serif !important;
+}
+
+/* Hero Section Styles */
+.navbar {
+  @media (max-width: 576px) {
+    padding: 40px; 
+  }
+}
+
+.navbar-text-custom {
+  font-weight: 400 !important;
+  line-height: 27px !important;
+  color: #222222 !important;
+}
+
+.btn.btn-outline-primary {
+  border: rgba(70, 142, 249, 1) 1px solid !important;
+  color: rgba(70, 142, 249, 1) !important;
+
+  &:hover {
+    font-weight: 600;
+    color: white !important;
+    background: linear-gradient(
+      180deg,
+      rgba(70, 142, 249, 1) 0%,
+      rgba(12, 102, 238, 1) 100%
+    );
+  }
+}
+
+.btn.btn-primary {
+  border: rgba(70, 142, 249, 1) 1px solid !important;
+  background: linear-gradient(
+    180deg,
+    rgba(70, 142, 249, 1) 0%,
+    rgba(12, 102, 238, 1) 100%
+  );
+
+  &:hover {
+    font-weight: 600;
+    color: rgb(70, 142, 249);
+    background: white;
+  }
+}
+
+.hero-text-1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  background: rgb(70, 142, 249);
+  background: linear-gradient(
+    180deg,
+    rgba(70, 142, 249, 1) 0%,
+    rgba(12, 102, 238, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.hero-text-2 {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 82px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -250px;
+    left: -70px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/hero-section-img/hero-ellipse-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/hero-section-img/hero-star-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    font-size: 48px;
+    line-height: 60px;
+
+    &::before {
+      bottom: -250px;
+      left: 0px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &::after {
+      top: -10px;
+      right: 70px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.hero-text-gradient {
+  background: rgb(96, 255, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(96, 255, 252, 1) 0%,
+    rgba(41, 126, 255, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-text-3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.hero-bitcoin-img {
+  position: relative;
+  width: 785px;
+  height: 762px;
+  background-image: url(../img/hero-section-img/hero-bitcoin.png);
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/hero-section-img/hero-ellipse-3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 230px;
+    right: 80px;
+    transform: translateY(-50%);
+    width: 27px;
+    height: 27px;
+    background-image: url(../img/hero-section-img/hero-ellipse-2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    width: 106%;
+
+    &::before {
+      top: 150px;
+      left: 30px;
+    }
+
+    &::after {
+      bottom: 205px;
+      right: 25px;
+    }
+  }
+}
+
+.hero-bg {
+  background: rgb(253, 249, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(253, 249, 255, 1) 0%,
+    rgba(248, 239, 255, 1) 10%,
+    rgba(233, 248, 255, 1) 30%,
+    rgba(231, 251, 255, 1) 60%,
+    rgba(231, 240, 255, 1) 80%,
+    rgba(226, 238, 255, 1) 100%
+  );
+}
+
+.padding-custom {
+  padding-top: 100px !important;
+  padding-bottom: 1000px !important;
+}
+
+/* Crypto Price Charts Section Styles */
+.card-margin {
+  margin-top: -55px;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+
+  &::before {
+    content: "🔥";
+  }
+}
+
+.card-link-text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #2f7cf0;
+  text-decoration: none;
+
+  &::after {
+    content: " >";
+  }
+}
+
+.card-text-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  margin: 0;
+}
+
+.crypto-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card-text-2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+
+  &::before {
+    content: "🚀";
+    margin-right: 5px;
+  }
+}
+
+.card-text-3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+
+  &::before {
+    content: "💎";
+    margin-right: 5px;
+  }
+}
+
+.custom-border-end {
+  border-right: none;
+}
+
+@media (min-width: 1200px) {
+  .custom-border-end {
+    border-right: 1px solid #eaeaea;
+  }
+}
+
+/* Buy and Trade Sections Styles */
+.buy-trade-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+  color: #222222;
+}
+
+.buy-trade-text-1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+  padding-right: 5rem;
+}
+
+.form-text-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  background: rgb(70, 142, 249);
+  background: linear-gradient(
+    180deg,
+    rgba(70, 142, 249, 1) 0%,
+    rgba(12, 102, 238, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+$border-width: 1.2px;
+$border-radius: 22px;
+$gradient: linear-gradient(
+  180deg,
+  rgba(103, 164, 255, 1) 25%,
+  rgba(12, 211, 255, 1) 50%,
+  rgba(47, 124, 240, 1) 75%,
+  rgba(14, 101, 232, 1) 100%
+);
+$background-color: white;
+
+.gradient-border {
+  position: relative;
+  padding: 30px 25px;
+  background: $background-color;
+  border-radius: $border-radius;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $gradient;
+    z-index: -1;
+    border-radius: $border-radius;
+    padding: $border-width;
+    -webkit-mask: linear-gradient(white, white) content-box,
+      linear-gradient(white, white) border-box;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
+.select-menu {
+  width: 180px;
+  position: relative;
+
+  .select-btn {
+    display: flex;
+    height: 87px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    gap: 12px;
+    transition: background 0.3s ease;
+
+    i {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &.active .select-btn i {
+    transform: rotate(-180deg);
+  }
+
+  .options {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+
+    .option {
+      display: flex;
+      height: 55px;
+      cursor: pointer;
+      padding: 0 16px;
+      border-radius: 8px;
+      align-items: center;
+      background: #fff;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #f2f2f2;
+      }
+
+      .option-text {
+        font-size: 18px;
+        color: #333;
+      }
+
+      i {
+        font-size: 25px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .flag-size,
+  .flag-size-1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    &.flag-size-1 {
+      margin-right: 0;
+    }
+  }
+}
+
+/* Trusted Partners Worldwide Sections Styles */
+.trusted-partners-bg {
+  position: relative;
+  border-radius: 40px;
+  background: rgb(228, 233, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 233, 240, 1) 0%,
+    rgba(242, 245, 250, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/trusted-partners-img/rectangle.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.35;
+    z-index: 1;
+    border-radius: 40px;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.trusted-partners-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: #222222;
+}
+
+.trusted-partners-text-1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
+}
+
+/* Nefa Credit Card Sections Styles */
+.credit-card-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.card-gradient-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+  background: rgb(57, 132, 244);
+  background: linear-gradient(
+    180deg,
+    rgba(57, 132, 244, 1) 14%,
+    rgba(12, 211, 255, 1) 45%,
+    rgba(47, 124, 240, 1) 70%,
+    rgba(14, 101, 232, 1) 85%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.credit-card-text-1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #666666;
+}
+
+.credit-card-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::marker {
+    content: "";
+  }
+
+  &::before {
+    content: url(../img/credit-card-img/check-circle.svg);
+    display: inline-block;
+    padding-top: 9px;
+  }
+}
+
+/* Advanced Trading Tools Sections Styles */
+.trading-tools-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #222222;
+}
+
+.trading-tools-gradient {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #222222;
+  background: rgb(57, 132, 244);
+  background: linear-gradient(
+    180deg,
+    rgba(57, 132, 244, 1) 14%,
+    rgba(12, 211, 255, 1) 45%,
+    rgba(47, 124, 240, 1) 70%,
+    rgba(14, 101, 232, 1) 85%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.trading-tools-text-1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #222222;
+}
+
+.trading-tools-text-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+  margin-right: 135px;
+}
+
+.trusted-partners-bg-1 {
+  position: relative;
+  border-radius: 40px;
+  background: rgb(228, 233, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 233, 240, 1) 0%,
+    rgba(242, 245, 250, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/trusted-partners-img/rectangle.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.15;
+    z-index: 1;
+    border-radius: 40px;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.padding-link {
+  @media (max-width: 768px) {
+    padding-left: 155px;
+    padding-top: 24px;
+  }
+
+  @media (max-width: 576px) {
+    padding-left: 95px;
+  }
+}
+
+/* Industry-Leading Security From Day One Sections Styles */
+.industry-leading-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #222222;
+}
+
+.industry-leading-text-1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &::before {
+    content: url(../img/credit-card-img/check-circle.svg);
+    padding-top: 8px;
+  }
+}
+
+.industry-leading-text-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+  margin-right: 50px;
+}
+
+/* User Onboarding & Transactions Sections Styles */
+.user-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #222222;
+}
+
+.user-img {
+  width: 216px;
+  height: 210px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 320px;
+}
+
+.user-img-1 {
+  width: 216px;
+  height: 210px;
+  position: relative;
+}
+
+.arrow-1 {
+  position: absolute;
+  top: 50%;
+  right: 360px;
+}
+
+.sign-up-text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37.5px;
+  color: #222222;
+}
+
+.user-text-1 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+  color: #666666;
+  text-align: center;
+}
+
+.padding-user-text {
+  @media (max-width: 992px) {
+    padding: 0 200px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 48px;
+  }
+}
+
+/* Frequently Asked Questions Sections Styles */
+.faq-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 6%;
+  background: rgb(70, 142, 249);
+  background: linear-gradient(
+    180deg,
+    rgba(70, 142, 249, 1) 0%,
+    rgba(12, 102, 238, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.faq-text-1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000000;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.faq-text-2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  margin: 0;
+}
+
+.faq-text-3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #666666;
+  margin: 0;
+}
+
+.margin-faq-img {
+  @media (width: 992px) {
+    margin-left: 100px;
+  }
+}
+
+.accordion {
+  --bs-accordion-active-bg: white !important;
+  --bs-accordion-border-color: white !important;
+}
+
+.accordion-body {
+  padding: 0 !important;
+  margin: 12px 0;
+}
+
+.accordion-button {
+  padding: 0 !important;
+  margin: 16px 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+/* Footer Section Styles */
+.custom-border-end {
+  border-right: 1px solid var(--bs-border-color);
+
+  @media (max-width: 576px) {
+    border-right: none !important;
+  }
+}
